@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  * @create: 2019-10-08 09:24
  **/
 public class LocalIdGenerator implements IdGenerator {
-    private static final long twepoch = 1561095400000L;
+    private static final long twepoch = System.currentTimeMillis();
     private static final long workerIdBits = 5L;
     private static final long datacenterIdBits = 5L;
     private static final long sequenceBits = 12L;
